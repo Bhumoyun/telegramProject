@@ -90,7 +90,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         bottom: TabBar(
           indicatorColor: value ? Colors.blue[700] : Colors.white,
           indicatorWeight: 6,
-          indicatorPadding: EdgeInsets.only(left: 30.w, right: 20.w),
+          indicatorPadding: EdgeInsets.only(left: 20.w, right: 20.w),
           controller: _controller,
           splashBorderRadius: BorderRadius.circular(20.r),
           tabs: [
@@ -200,10 +200,12 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           ? Icon(
                               Icons.mode_night_outlined,
                               color: Colors.white,
+                              size: 18.sp
                             )
                           : Icon(
                               Icons.light_mode_rounded,
                               color: Colors.white,
+                              size: 18.sp
                             ),
                     ),
                   )
@@ -540,7 +542,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           children: [
                             Container(
                               width: 234.w,
-                              height: 18.h,
+                              height: 22.h,
                               child: Text(
                                 Info.title[index],
                                 style: TextStyle(
@@ -557,7 +559,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                         ),
                       ),
                       leading: CircleAvatar(
-                        radius: 25,
+                        radius: 25.r,
                         backgroundImage: AssetImage(Info.Assetimage[index]),
                         backgroundColor: Color.fromARGB(255, 66, 70, 196),
                       ),
